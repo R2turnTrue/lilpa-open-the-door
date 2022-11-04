@@ -20,9 +20,8 @@ export default function Home() {
       if(json.lastLive) {
         const streamDate = new Date(json.lastLive)
         const currentDate = new Date()
-        const subDate = new Date(currentDate.getTime() - streamDate.getTime())
-        console.log(`${subDate.getDate()} ; ${subDate.getHours()}`)
-        setTime(subDate.getHours())
+        const subDate = currentDate.getTime() - streamDate.getTime()
+        setTime((subDate - (subDate % 3600000)) / 3600000)
       }
       if(json.errorOccurred) {
         setIsError(true)
