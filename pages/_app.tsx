@@ -13,10 +13,12 @@ export default function App({ Component, pageProps }: AppProps) {
     <Component {...pageProps} />
 
     <Script
+        id='ganalytics'
         strategy='afterInteractive'
         src={`https://www.googletagmanager.com/gtag/js?id=G-BLD5PM9BKD`}
       />
       <Script
+        id='ganalytics-initializer'
         strategy='afterInteractive'
         dangerouslySetInnerHTML={{
           __html: `
