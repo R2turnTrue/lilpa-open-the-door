@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <Base isLilpaLive={false} isLoading={false}>
       <h1>릴파넴 문여세요ㅛㅛㅛㅛㅛㅛㅛ</h1>
-      <h2>릴파님이 방송을 키시지 않은지: {time === 0 ? '로드중..' : `${time}년째`}</h2>
+      <h2>릴파님이 방송을 키시지 않은지: {time === 0 ? '로드중..' : `${time}억년째`}</h2>
     </Base>
   )
 }
