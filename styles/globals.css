@@ -87,3 +87,43 @@ a {
   }
 }
 */
+
+.panel-blur-hide {
+  background-color: rgba(255, 255, 255, 0.0);
+  color: rgba(255, 255, 255, 0.0);
+  padding: 1.5rem;
+  padding-left: 3.0rem;
+  padding-right: 3.0rem;
+  border-radius: 15px;
+  transition-property: all 0.25s cubic-bezier(.17,.67,.83,.67);
+	transition-duration: 0.25s;
+}
+
+.panel-blur-show {
+  /*background-color: rgba(255, 255, 255, 0.418);*/
+  color: rgba(255, 255, 255, 1.0);
+  padding: 1.5rem;
+  padding-left: 3.0rem;
+  padding-right: 3.0rem;
+  border-radius: 15px;
+  transition-property: all 0.25s cubic-bezier(.17,.67,.83,.67);
+	transition-duration: 0.25s;
+}
+
+svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: all 0.25s cubic-bezier(.17,.67,.83,.67);
+}
+
+.show-svg {
+  fill: rgba(255, 255, 255, 1.0);
+}
+
+.hide-svg {
+  fill: rgba(255, 255, 255, 0.0);
+}

@@ -34,7 +34,7 @@ export default function Home() {
 
   if(isError) {
     return (
-      <Base isLilpaLive={false}>
+      <Base isLilpaLive={false} isLoading={false}>
         <h1>오류가 발생했습니다!</h1>
       </Base>
     )
@@ -42,15 +42,14 @@ export default function Home() {
 
   if(!loaded) {
     return (
-      <Base isLilpaLive={false}>
-        <h1>로드중!</h1>
+      <Base isLilpaLive={false} isLoading={true}>
       </Base>
     )
   }
 
   if(live) {
     return (
-      <Base isLilpaLive={true}>
+      <Base isLilpaLive={true} isLoading={false}>
         <h1>릴파넴 트위치 ON!</h1>
         <h2><a href='https://twitch.tv/lilpaaaaaa' style={{textDecoration: 'underline', color: 'white'}}>방송 보러가기</a></h2>
       </Base>
@@ -58,7 +57,7 @@ export default function Home() {
   }
 
   return (
-    <Base isLilpaLive={false}>
+    <Base isLilpaLive={false} isLoading={false}>
       <h1>릴파넴 문여세요ㅛㅛㅛㅛㅛㅛㅛ</h1>
       <h2>릴파님이 방송을 키시지 않은지: {time === 0 ? '로드중..' : `${time}년째`}</h2>
     </Base>
