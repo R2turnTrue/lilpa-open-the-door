@@ -1,6 +1,6 @@
 const EXTERNAL_DATA_URL = 'https://jsonplaceholder.typicode.com/posts';
 
-function generateSiteMap(posts) {
+function generateSiteMap() {
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 
