@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <Head>
       <title>릴파넴 문여세요ㅛㅛㅛㅛㅛ</title>
 
+      <meta name="google-site-verification" content="rPlE4tV6K9OqqWGs9ZeCgetXfsu-Wk595PZZf6p97RQ" />
       <link rel="icon" type="image/png" href="/favicon.png" />
     </Head>
     <Component {...pageProps} />
